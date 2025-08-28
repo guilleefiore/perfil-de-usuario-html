@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <meta charset="UTF-8">
   <meta name="description" content="Perfil de usuario con HTML avanzado">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guillermina Fiore</title>
-
 </head>
+<body style="background: linear-gradient(to left, #91562b, #bb8268, #D2B48C);">
 
-    <body>
+    <!-- Encabezado -->
+    <header>
+        <h1>¡Bienvenidos al blog de Guillermina!</h1>
+        <h4>Un paseo por mi vida personal.</h4>
+    </header>
 
-        <header>   
-
-            <h1>
-                Bienvenidos al blog de Guillermina
-            </h1>
-
-            <h4> 
-                Aquí encontrarás un poco de mi día a día...
-            </h4>
-
-            <h5>
-                Y mucho de mi vida privada también
-            </h5>
-
-        </header>
-
-        <main>  
-
-            <article>   
-                <h6>    
-                    Miércoles 27 de Agosto del 2025
-                </h6>
-
-                <h4>    
+    <!-- Contenido principial -->
+    <main>
+        
+        <!-- Bibliografía de mí -->
+        <article>   
+                <h3>    
                     Presentación: 
-                </h4>
+                </h3>
 
-                <p>
-                    ¡Bienvenidos a mi blog personal! Acá podrás encontrar chismes
-                    y un poco de mi día a día... 
-                </p>
-
-            </article>
+                <p>¡Bienvenidos a mi blog personal! Soy Guillermina Fiore, actualmente estudiante de 3º año en Ingeniería en Sistemas, pero mentalmente busco respuestas en la espiritualidad. Por eso, mi vida no sólo se basa en la ciencia... 
+                    Si sos más de los chismes, este es tu lugar, porque podrás encontrar chismes y mucho humor negro.</p>
+        </article>
             
-            <section>
-                <h2>    
-                    Contacto
-                </h2>
-
-                <table border="1">
-                    <thead>
-                        <tr>
-                           <th>Tipo</th>
-                           <th>Detalle</th> 
+        <!-- Detalles de contacto en una tabla -->
+        <section>
+            <h3>Contactate conmigo</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Redes</th>
+                        <th>Detalle</th> 
                         </tr>
-                    </thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Email</td>
+                        <td>guillefiore03@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono</td>
+                        <td>+54 9 2613080065</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td>Guillermina Fiore</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>@guilleefiore</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-                    <tbody> 
-                        <tr>
-                            <td>Email</td>
-                            <td>guillefiore03@gmail.com</td>
-                        </tr>
+        <!-- Formulario de suscripción -->
+        <section>
+            <h3>Si quieres recibir mis notificaciones diarias:</h3>
+            <form>  
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
 
-                        <tr>    
-                            <td>Teléfono</td>
-                            <td>+54 9 2613080065</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+                
+                <input type="submit" value="Actualizar">
+                <h6>Podras cancelar la suscripción en el momento que desees. ¡Gracias!</h6>
+            </form>
+        </section>
+        
+        <!-- Imagen de perfil -->
+        <section>
+            <img src="yo.png" alt="Guillermina" width="120" height="120">
+        </section>
+    
+    </main>
 
-    </body>
+    <!-- Pie de página -->
+     <footer>
+        <p>© 2025 Mi Sitio Web - Guillermina Fiore</p>
+     </footer>
+
+</body>
+</html>
